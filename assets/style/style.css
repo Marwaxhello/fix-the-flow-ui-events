@@ -207,29 +207,120 @@ a:nth-of-type(12) {
       }
     }
 
-/* Fix, Round */
-/* .round {
-  animation-name: round;
+/* Fix, rainbow */
+.rainbow{
+  animation-name: rainbow;
+  animation-duration: 6s;
+  animation-iteration-count: 1;
+}
+
+@keyframes rainbow{
+  0%{
+    background-color: red;
+  }
+  20%{
+    background: orange;
+  }
+  40%{
+    background: yellow;
+  }
+  60%{
+    background: green;
+  }
+  80%{
+    background: blue;
+  }
+  100%{
+    background: purple;
+  }
+}
+
+
+/*The, dropdown*/
+.down{
+  animation-name: down;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-duration: 1.2s;
+  animation-iteration-count: 1;
+}
+
+  @keyframes down {
+      0% {
+        transform: scale(1) translateY(0);
+      }
+  
+      10% {
+        transform: scale (0.9) translateY(0);
+      }
+  
+      30% {
+      transform: scale(1.1) translateY(5rem);
+    }
+
+     50% {
+     transform: scale(0.95) translateY(0);
+    }
+    
+     60% {
+     transform: scale(1) translateY(0.5rem);
+    }
+    
+     100% {
+     transform: scale(1) translateY(0);
+    }
+  }
+
+ /*Flow, change*/
+.change{
+  animation-name: change;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes change{
+  0%{
+    background: var(--highlight-primary);
+    color: var(--secondary);
+    border-color: var(--secondary);
+  }
+  50%{
+    background: var(--secondary);
+    color: var(--highlight-primary);
+    border-color: var(--highlight-primary);
+    backdrop-filter: blur(120px);
+  }
+  100%{
+    background: var(--highlight-primary);
+    color: var(--secondary);
+    border-color: var(--secondary);
+  }
+}
+
+/*User, Form*/
+
+.form{
+  animation-name: form;
   animation-duration: 3s;
-} */
+}
 
-/* @keyframes round {
-  0% {
-    border-radius: 2rem;
-    font-size: 2rem;
+@keyframes form{
+  50%{
+    border-radius: 8px;
   }
+}
 
-  50% {
-    position: sticky;
-    border-radius: 2rem;
-    font-size: 1rem;
-    text-align: justify;
-    height: 3.5rem;
-    width: 3.5rem;
-  }
+/*Interface, Filing color*/
 
-  100% {
-    border-radius: 2rem;
-    font-size: 2rem;
+.slidecolor{
+  animation-name: Slidecolor;
+  animation-duration: 3s;
+}
+
+@keyframes Slidecolor{
+  0%{
+    background: linear-gradient(to left, trasparent 0% 50%, blue 50% 100%);
   }
-} */
+  100%{
+    background: linear-gradient(to left, blue 0% 100%);
+  }
+}

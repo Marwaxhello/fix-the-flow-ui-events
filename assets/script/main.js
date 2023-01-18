@@ -62,12 +62,52 @@ function fade() {
 }
 
 
-/* Fix, Round */
-// let round = document.querySelector('a:nth-of-type(6)')
+/* Fix, rainbow */
+let fix = document.querySelector('a:nth-of-type(6)')
 
-// fix.addEventListener ('click', round)
-// fix.addEventListener ('Animation', round)
+fix.addEventListener ('click', rainbow)
+fix.addEventListener ('Animation', rainbow)
 
-// function round() {
-//   round.classList.toggle('round')
-// }
+function rainbow() {
+  fix.classList.toggle('rainbow')
+}
+
+/* The, dropdown */
+let The = document.querySelector('a:nth-of-type(7)')
+
+The.addEventListener('click', down)
+The.addEventListener('animationed', down)
+
+function down() {
+The.classList.toggle('down')
+}
+
+/* Flow, change */
+let Flow = document.querySelector('a:nth-of-type(8)')
+
+Flow.addEventListener('click', change)
+Flow.addEventListener('animationed', change)
+
+function change() {
+  Flow.classList.toggle('change')
+}
+
+/* User, form */
+let User = document.querySelector('a:nth-of-type(9)')
+
+User.addEventListener('click', form)
+User.addEventListener('animationed', form)
+
+function form() {
+User.classList.toggle('form')
+}
+
+/* Interface, filling color */
+let Interface = document.querySelector('a:nth-of-type(10)')
+
+Interface.addEventListener('click', slidecolor)
+Interface.addEventListener('animationed', slidecolor)
+
+function slidecolor() {
+Interface.classList.toggle('slidecolor')
+}
